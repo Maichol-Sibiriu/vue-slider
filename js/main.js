@@ -14,5 +14,22 @@ const slider = new Vue({
       "https://i.pinimg.com/originals/68/40/ca/6840ca5f96d7c0e3a403ae3a3c02e37a.jpg",
       "https://www.drcommodore.it/wp-content/uploads/2019/01/nick-fury-captain-america-the-winter-soldier-min-990x619.jpg",
     ],
+  },
+  methods: {
+    nextImg(){
+      this.indexImg += 1;
+
+      if (this.indexImg > this.img.length - 1) {
+         this.indexImg = 0;
+      }
+    },
+    prevImg(){
+      this.indexImg -= 1;
+
+      if (this.indexImg < 0) {
+         this.indexImg = this.img.length - 1;
+      }
+    }
+
   }
 });

@@ -17,7 +17,7 @@
         <h1>indovina il personaggio...</h1>
 
         <!-- freccia sx -->
-        <i class="fas fa-arrow-circle-left fa-2x"></i>
+        <i class="fas fa-arrow-circle-left fa-2x" @click="prevImg"></i>
 
         <!-- slide immagini -->
         <div class="image">
@@ -25,7 +25,7 @@
         </div>
 
         <!-- freccia dx -->
-        <i class="fas fa-arrow-circle-right fa-2x"></i>
+        <i class="fas fa-arrow-circle-right fa-2x" @click="nextImg"></i>
 
 
         <!-- pallini -->
@@ -40,8 +40,6 @@
           v-model="name">
           <h2>il tuo personaggio e'...</h2>
           <p>{{ name }}</p>
-        </div>
-        <!-- <div class="right">
         </div>
 
 
