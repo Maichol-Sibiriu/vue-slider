@@ -67,6 +67,10 @@ body{
   cursor: pointer;
 }
 
+.fa-circle.active{
+  color: red;
+}
+
 /* text */
 h1{
   font-family: 'Acme', sans-serif;

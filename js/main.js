@@ -2,7 +2,6 @@
 const slider = new Vue({
   el: "#sliders",
   data: {
-    title: "indovina chi...",
     name: "",
     indexImg: 0,
     img: [
@@ -29,6 +28,9 @@ const slider = new Vue({
       if (this.indexImg < 0) {
          this.indexImg = this.img.length - 1;
       }
+    },
+    circleImg(index){
+      this.indexImg = index;
     }
 
   }
