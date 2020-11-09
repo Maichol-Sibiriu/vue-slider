@@ -1,0 +1,87 @@
+/* general style */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* layout */
+.image{
+  width: 450px;
+  margin: 0 auto;
+}
+
+.image img{
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.ask{
+  position: absolute;
+  left: 45%;
+  transform: translateX(-50%);
+  margin: 50px;
+  text-align: center;
+}
+
+/* arrow */
+.fa-arrow-circle-left,
+.fa-arrow-circle-right{
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  color: dodgerblue;
+}
+
+.fa-arrow-circle-left{
+  left: 27%;
+}
+
+.fa-arrow-circle-right{
+  right: 27%;
+}
+
+/* dots */
+.circle{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fa-circle{
+  margin: 20px;
+  color: dodgerblue;
+}
+
+/* text */
+h1{
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-size: 40px;
+  color: red;
+  text-transform: uppercase;
+}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  margin: 20px;
+  text-transform: uppercase;
+}
+
+.ask input{
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}

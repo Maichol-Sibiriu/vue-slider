@@ -5,9 +5,51 @@
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
     <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+
+    <!-- contenitore sliders -->
+    <div class="container">
+      <div id="sliders">
+        <h1>indovina il personaggio...</h1>
+
+        <!-- freccia sx -->
+        <i class="fas fa-arrow-circle-left fa-2x"></i>
+
+        <!-- slide immagini -->
+        <div class="image">
+          <img :src="img[indexImg]" alt="">
+        </div>
+
+        <!-- freccia dx -->
+        <i class="fas fa-arrow-circle-right fa-2x"></i>
+
+
+        <!-- pallini -->
+        <div class="circle">
+          <i class="fas fa-circle"></i>
+        </div>
+
+        <div class="ask">
+          <input
+          type="text"
+          placeholder="inserisci nome personaggio"
+          v-model="name">
+          <h2>il tuo personaggio e'...</h2>
+          <p>{{ name }}</p>
+        </div>
+        <!-- <div class="right">
+        </div>
+
+
+
+      </div>
+    </div>
+
+
 
 
     <!-- javascript -->
